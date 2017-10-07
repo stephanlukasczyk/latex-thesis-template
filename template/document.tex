@@ -1,0 +1,62 @@
+\documentclass[paper=a4,%
+  twoside,%
+  BCOR4mm,%
+  abstract=true,%
+  toc=bibliography,%
+  chapterprefix=true,%
+%  toc=listof,%
+  toc=bibliographynumbered,%
+%  toc=listofnumbered,%
+  open=right,%
+  english,%
+  pagesize=pdftex]{scrreprt}
+\listfiles
+
+\usepackage[eulerchapternumbers]{template}
+\usepackage{blindtext}
+\usepackage{graphicx}
+
+\begin{document}
+\automark[section]{chapter}
+\frontmatter
+\subject{\normalfont~\\[0.5cm]
+  %\includegraphics[width=.75\textwidth]{institute-logo}
+  ~\\[1.5cm]
+  Thesis Type in Discipline}
+\title{\normalfont Thesis Title}
+\author{Thesis Author}
+\date{Submission Date}
+\publishers{Advisor: Prof. Dr. Max Mustermann\\
+  {\large (Chair for The Theory of Everything)}}
+\lowertitleback{~\\
+  \textbf{Thesis Author}:\\
+  \emph{Thesis Title}\\
+  Thesis Type, University of the World, year.
+}
+\maketitle
+
+\begin{abstract}
+  \blindtext
+\end{abstract}
+\cleardoublepage
+\tableofcontents
+
+\mainmatter% Main Document starts here
+
+\blinddocument
+
+\backmatter% Now we are in the appendix
+\appendix
+\cleardoublepage
+\thispagestyle{empty}
+\null\vfill
+\noindent\textbf{Eidesstattliche Erklärung:}\\[1.5ex]
+Hiermit versichere ich an Eides statt, daß ich diese Bachelorarbeit
+selbstständig und ohne Benutzung anderer als der angegebenen Quellen und
+Hilfsmittel angefertigt habe und daß alle Ausführungen, die wörtlich oder
+sinngemäß übernommen wurden, als solche gekennzeichnet sind, sowie daß ich die
+Bachelorarbeit in gleicher oder ähnlicher Form noch keiner anderen
+Prüfungsbehörde vorgelegt habe.\\[1.5cm]
+Place, \today\quad\rule{6cm}{0.1mm}\\
+\null\hspace{5cm} {\small Thesis Author}
+\end{document}
