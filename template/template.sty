@@ -269,6 +269,54 @@
 \providecommand{\mainmatter}{%
   \cleardoublepage%
   \pagenumbering{arabic}%
+  \rofoot[{% style for pagestyle empty, i.e. pages where new chapters start
+    {\ }%
+    \footnotesize%
+    \hspace*{0.75cm}%
+    {\color{thesisblue}\rule[-100pt]{1.25pt}{110pt}}%
+    \hspace*{10pt}%
+    \begin{minipage}[b]{1.5cm}%
+      \normalsize\textbf{\pagemark}%
+    \end{minipage}%
+    \hspace{-1.85cm}%
+  }]{% style of normal pages
+    {\ }%
+    \footnotesize%
+    \textbf{\thesection}%
+    \hspace*{10pt}%
+    {\color{thesisblue}\spacedSmallCaps{\rightmark}}%
+    \hspace*{0.75cm}%
+    {\color{thesisblue}\rule[-100pt]{1.25pt}{110pt}}%
+    \hspace*{10pt}%
+    \begin{minipage}[b]{1.5cm}%
+      \normalsize\textbf{\pagemark}%
+    \end{minipage}%
+    \hspace{-1.85cm}%
+  }
+  
+  \lefoot[{%
+    \null\hspace{-1.85cm}%
+    \footnotesize%
+    \begin{minipage}[b]{1.5cm}%
+      \raggedleft\normalsize\textbf{\pagemark}%
+    \end{minipage}%
+    \footnotesize%
+    \hspace*{10pt}%
+    {\color{thesisblue}\rule[-100pt]{1.25pt}{110pt}}%
+  }]{%
+    \null\hspace{-1.85cm}%
+    \footnotesize%
+    \begin{minipage}[b]{1.5cm}%
+      \raggedleft\normalsize\textbf{\pagemark}%
+    \end{minipage}%
+    \footnotesize%
+    \hspace*{10pt}%
+    {\color{thesisblue}\rule[-100pt]{1.25pt}{110pt}}%
+    \hspace*{0.75cm}%
+    \textbf{Chapter~\thechapter}%
+    \hspace*{10pt}%
+    {\color{thesisblue}\spacedSmallCaps{\leftmark}}%
+  }
 }
 \providecommand{\backmatter}{%
   \if@openright%
