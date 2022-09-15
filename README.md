@@ -1,3 +1,11 @@
+# Important Deprecation Notice
+
+This project is no longer maintained and considered deprecated!
+
+We provide a successor project with the [se2thesis](https://ctan.org/pkg/se2thesis) bundle;
+you can find the GitHub repository for the `se2thesis` bundle at [se2p/se2thesis](https://github.com/se2p/se2thesis).
+The `se2thesis` bundle is available from CTAN and part of the latest MikTeX and TeX Live updates.
+
 LaTeX Thesis Template
 =====================
 
@@ -27,8 +35,9 @@ The latest version of this license is in
 and version 1.3 or later is part of all distributions of LaTeX verions
 2005/12/01 or later.
 
-This work has the LPPL maintenance status “maintained”.
+This work has the LPPL maintenance status “unmaintained”.
 
-The Current Maintainer of this work is Stephan Lukasczyk.
+The Previous Maintainer of this work was Stephan Lukasczyk.
+There is a successor project that shall be used.
 
 This work consists of all files in this repository.
